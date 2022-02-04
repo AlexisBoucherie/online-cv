@@ -128,6 +128,12 @@ h1, h2, .label, .pretty {
     border: #000 2px solid;
 }
 
+footer {
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 /* TABLET */
 
 @media screen and (min-width: 480px) {
@@ -160,6 +166,10 @@ h1, h2, .label, .pretty {
 
 @media screen and (min-width: 768px) {
     
+    body {
+        font-size: 18px;
+    }
+
     .containerMain {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
