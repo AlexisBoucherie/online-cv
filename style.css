@@ -1,0 +1,51 @@
+body {
+    background-color: #cec2ae;
+}
+
+.containerMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pict profile stats"
+      "skills skills training"
+      "xp xp gear";
+      margin: auto 5%;
+}
+
+.pict {
+    grid-area: pict;
+}
+ 
+.profile {
+    grid-area: profile;
+}
+  
+.stats {
+    grid-area: stats;
+}
+  
+.skills {
+    grid-area: skills;
+}
+  
+.training {
+    grid-area: training;
+}
+  
+.xp {
+    grid-area: xp;
+}
+  
+.gear {
+    grid-area: gear;
+}
+
+.block {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #00000040;
+    padding: 10px;
+}
