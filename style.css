@@ -1,17 +1,32 @@
 body {
     background-color: #cec2ae;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
 }
 
 h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+    color: #e94445;
+    letter-spacing: 2px;
     margin: 10px auto;
     text-align: center;
+}
+
+h1, h2, .label {
+    font-family: 'Almendra', serif;
 }
 
 .containerMain {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -24,17 +39,39 @@ h1 {
       "gear";
     margin: auto 3%;
 }
-
-.pict {
-    grid-area: pict;
-}
  
 .profile {
     grid-area: profile;
 }
+
+.profile p {
+    line-height: 0.9em;
+}
+
+.label {
+    font-weight: bold;
+}
   
 .stats {
     grid-area: stats;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.stats p {
+    background-color: #cec2ae;
+    display: block;
+    width: 25vw;
+    max-width: 80px;
+    padding: 2px;
+    font-size: 1.2em;
+    line-height: 0.9em;
+    text-align: center;
+    border-radius: 20px;
 }
   
 .skills {
@@ -56,8 +93,22 @@ h1 {
 .block {
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px #00000040;
+    border: #000 5px double;
+    /*box-shadow: 4px 4px 4px #00000040;*/
     padding: 10px;
+    min-width: 200px;
+}
+
+.pict {
+    grid-area: pict;
+    display: block;
+    height: auto;
+    min-height: 200px;
+    background-image: url(img/alderic.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #000 2px solid;
 }
 
 /* TABLET */
@@ -66,7 +117,7 @@ h1 {
     
     .containerMain {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
         gap: 15px 15px;
         grid-template-areas:
           "pict profile"
@@ -75,7 +126,13 @@ h1 {
           "xp gear"
           "xp gear";
         margin: auto 4%;
-      }
+    }
+
+    .pict {
+        height: 250px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 /* DESKTOP */
@@ -84,7 +141,7 @@ h1 {
     
     .containerMain {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         gap: 20px 20px;
         grid-template-areas:
           "pict profile stats"
@@ -92,5 +149,9 @@ h1 {
           "xp xp gear";
         margin: auto 5%;
         max-width: 1200px;
+    }
+
+    .pict {
+        height: 300px;
     }
 }
