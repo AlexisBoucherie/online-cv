@@ -1,5 +1,11 @@
 body {
     background-color: #cec2ae;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+    margin: 10px auto;
+    text-align: center;
 }
 
 .containerMain {
@@ -70,6 +76,7 @@ body {
           "xp gear";
         margin: auto 4%;
       }
+}
 
 /* DESKTOP */
 
