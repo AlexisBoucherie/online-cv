@@ -4,15 +4,19 @@ body {
 
 .containerMain {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
-      "pict profile stats"
-      "skills skills training"
-      "xp xp gear";
-      margin: auto 5%;
+      "pict"
+      "profile"
+      "stats"
+      "skills"
+      "training"
+      "xp"
+      "gear";
+    margin: auto 3%;
 }
 
 .pict {
@@ -48,4 +52,38 @@ body {
     border-radius: 20px;
     box-shadow: 4px 4px 4px #00000040;
     padding: 10px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 480px) {
+    
+    .containerMain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px 15px;
+        grid-template-areas:
+          "pict profile"
+          "skills stats"
+          "skills training"
+          "xp gear"
+          "xp gear";
+        margin: auto 4%;
+      }
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+    
+    .containerMain {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+          "pict profile stats"
+          "skills skills training"
+          "xp xp gear";
+        margin: auto 5%;
+        max-width: 1200px;
+    }
 }
