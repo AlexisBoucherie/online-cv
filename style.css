@@ -184,4 +184,8 @@ footer {
     .pict {
         height: 300px;
     }
+
+    .skills section, .xp section {
+        width: 14vw;
+    }
 }
