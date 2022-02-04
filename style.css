@@ -2,6 +2,8 @@ body {
     background-color: #cec2ae;
     font-family: 'Architects Daughter', cursive;
     font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -12,14 +14,14 @@ h2 {
     font-size: 1.2em;
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #e94445;
     letter-spacing: 2px;
     margin: 10px auto;
     text-align: center;
 }
 
-h1, h2, .label {
+h1, h2, .label, .pretty {
     font-family: 'Almendra', serif;
 }
 
@@ -77,6 +79,17 @@ h1, h2, .label {
 .skills {
     grid-area: skills;
 }
+
+.skills section, .xp section {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.skills ul, .gear ul {
+    padding-left: 10px;
+    list-style-type: "- ";
+}
   
 .training {
     grid-area: training;
@@ -90,11 +103,15 @@ h1, h2, .label {
     grid-area: gear;
 }
 
+.gear p {
+    line-height: 0.9em;
+}
+
 .block {
     background-color: #fff;
     border-radius: 20px;
     border: #000 5px double;
-    /*box-shadow: 4px 4px 4px #00000040;*/
+    box-shadow: 4px 4px 4px #00000040;
     padding: 10px;
     min-width: 200px;
 }
@@ -133,6 +150,10 @@ h1, h2, .label {
         margin-top: auto;
         margin-bottom: auto;
     }
+
+    .skills section, .xp section {
+        width: 18vw;
+    }
 }
 
 /* DESKTOP */
@@ -148,7 +169,6 @@ h1, h2, .label {
           "skills skills training"
           "xp xp gear";
         margin: auto 5%;
-        max-width: 1200px;
     }
 
     .pict {
