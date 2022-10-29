@@ -25,6 +25,12 @@ h1, h2, .label, .pretty {
     font-family: 'Almendra', serif;
 }
 
+.legende {
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto 1em;
+}
+
 .containerMain {
     display: grid;
     grid-template-columns: 1fr;
@@ -41,7 +47,7 @@ h1, h2, .label, .pretty {
       "gear";
     margin: auto 3%;
 }
- 
+
 .profile {
     grid-area: profile;
 }
@@ -53,7 +59,7 @@ h1, h2, .label, .pretty {
 .label {
     font-weight: bold;
 }
-  
+
 .stats {
     grid-area: stats;
 }
@@ -75,7 +81,7 @@ h1, h2, .label, .pretty {
     text-align: center;
     border-radius: 20px;
 }
-  
+
 .skills {
     grid-area: skills;
 }
@@ -90,15 +96,15 @@ h1, h2, .label, .pretty {
     padding-left: 10px;
     list-style-type: "- ";
 }
-  
+
 .training {
     grid-area: training;
 }
-  
+
 .xp {
     grid-area: xp;
 }
-  
+
 .gear {
     grid-area: gear;
 }
@@ -137,7 +143,7 @@ footer {
 /* TABLET */
 
 @media screen and (min-width: 480px) {
-    
+
     .containerMain {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto auto;
@@ -165,7 +171,7 @@ footer {
 /* DESKTOP */
 
 @media screen and (min-width: 768px) {
-    
+
     body {
         font-size: 18px;
     }
