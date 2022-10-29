@@ -1,14 +1,14 @@
 <?php
 
 //calcul de l'age
-$currentDate =  Date('Y');
+$currentDate = Date('Y');
 $yearOfBirth = 1988;
 $age = $currentDate - $yearOfBirth;
 
 //calcul des pv
 $healthDie = 10;
 $constitutionBonus = 2;
-$hp = ($healthDie+$constitutionBonus) + (($age-1) * ($healthDie/2+1)) + (($age-1)*$constitutionBonus);
+$hp = ($healthDie + $constitutionBonus) + (($age - 1) * ($healthDie / 2 + 1)) + (($age - 1) * $constitutionBonus);
 
 ?>
 
@@ -83,6 +83,16 @@ $hp = ($healthDie+$constitutionBonus) + (($age-1) * ($healthDie/2+1)) + (($age-1
                     </ul>
                 </section>
                 <section>
+                    <p class="label">Gestion</p>
+                    <ul>
+                        <li>Méthode Agile Scrum</li>
+                        <li>Administration forum</li>
+                        <li>Standard téléphonique</li>
+                        <li>Courriels</li>
+                        <li>Caisse, recettes du jour</li>
+                    </ul>
+                </section>
+                <section>
                     <p class="label">Représentation</p>
                     <ul>
                         <li>Visites guidées</li>
@@ -99,16 +109,6 @@ $hp = ($healthDie+$constitutionBonus) + (($age-1) * ($healthDie/2+1)) + (($age-1
                         <li>Renseignements</li>
                         <li>Promotion d'un produit, d'une destination</li>
                         <li>Ventes de billets, de produits</li>
-                    </ul>
-                </section>
-                <section>
-                    <p class="label">Gestion</p>
-                    <ul>
-                        <li>Méthode Agile Scrum</li>
-                        <li>Administration forum</li>
-                        <li>Standard téléphonique</li>
-                        <li>Courriels</li>
-                        <li>Caisse, recettes du jour</li>
                     </ul>
                 </section>
                 <section>
@@ -160,7 +160,7 @@ $hp = ($healthDie+$constitutionBonus) + (($age-1) * ($healthDie/2+1)) + (($age-1
             <div class="flex">
                 <section>
                     <p class="pretty">Oct. 2022
-                        <br><strong>Réalisation d'un portfolio en PHP natif, modèle MVC</strong>
+                        <br><strong>Réalisation d'un portfolio, PHP natif, modèle MVC</strong>
                         <br>Wild Code School, Bordeaux
                         <br>(Projet annexe individuel)
                     </p>
@@ -172,11 +172,13 @@ $hp = ($healthDie+$constitutionBonus) + (($age-1) * ($healthDie/2+1)) + (($age-1
                         <br>(Projet annexe individuel)
                     </p>
                 </section>
-                <p class="pretty">Fév. 2022
-                    <br><strong>Réalisation d'un jeu de dés en JS Vanilla</strong>
-                    <br>Studi, en remote
-                    <br>(Projet d'étude individuel)
-                </p>
+                <section>
+                    <p class="pretty">Fév. 2022
+                        <br><strong>Réalisation d'un jeu de dés, JS Vanilla</strong>
+                        <br>Studi, en remote
+                        <br>(Projet d'étude individuel)
+                    </p>
+                </section>
                 <section>
                     <p class="pretty">2010/2014 - 2018/2021
                         <br><strong>Guide touristique et agent d'accueil</strong>
