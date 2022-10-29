@@ -25,11 +25,6 @@ h1, h2, .label, .pretty {
     font-family: 'Almendra', serif;
 }
 
-.legende {
-    text-align: center;
-    font-family: 'Almendra', serif;
-}
-
 .containerMain {
     display: grid;
     grid-template-columns: 1fr;
@@ -133,10 +128,11 @@ h1, h2, .label, .pretty {
     border: #000 2px solid;
 }
 
-footer {
+footer, .legende {
     height: 30px;
     text-align: center;
-    margin: 0 auto;
+    margin: 1em auto;
+    font-family: 'Almendra', serif;
 }
 
 /* TABLET */

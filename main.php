@@ -121,9 +121,9 @@ $hp = ($healthDie + $constitutionBonus) + (($age - 1) * ($healthDie / 2 + 1)) + 
                 <section>
                     <p class="label">Sport</p>
                     <ul>
-                        <li>Randonnée</li>
+                        <li>Marche</li>
                         <li>Vélo</li>
-                        <li>Piscine</li>
+                        <li>Natation</li>
                     </ul>
                 </section>
             </div>
