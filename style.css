@@ -27,9 +27,7 @@ h1, h2, .label, .pretty {
 
 .legende {
     text-align: center;
-    width: 80vw;
-    margin: 0 auto 1em;
-}
+    font-family: 'Almendra', serif;}
 
 .containerMain {
     display: grid;

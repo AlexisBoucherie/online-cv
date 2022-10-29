@@ -14,7 +14,7 @@ $hp = ($healthDie + $constitutionBonus) + (($age - 1) * ($healthDie / 2 + 1)) + 
 
 <main>
     <h1>Feuille de Personnage</h1>
-    <p class="legende">Curriculum Vitae fun et fantaisiste, inspiré d'une feuille de personnage Donjons & Dragons
+    <p class="legende">CV perso. fun et fantaisiste, inspiré d'une feuille de personnage Donjons & Dragons
         classique.</p>
     <div class="containerMain">
         <div class="block pict"></div>
