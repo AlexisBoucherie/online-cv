@@ -1,4 +1,4 @@
 <?php
-include_once('header.php');
-include_once('main.php');
-include_once('footer.php');
+include_once('inc/header.php');
+include_once('inc/main.php');
+include_once('inc/footer.php');
